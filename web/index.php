@@ -40,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       post_to_lifx("/v1beta1/lights/{$bulb_selector}/effects/breathe.json", [
         power_on   => false,
         color      => "green brightness:75%",
-        from_color => "green brightness:10%",
+        from_color => "green brightness:25%",
         period     => 0.45,
         cycles     => 3,
         persist    => true,
